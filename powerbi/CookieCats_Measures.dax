@@ -1,0 +1,40 @@
+-- Rename the imported table to cookie_cats before adding these measures.
+
+Players =
+DISTINCTCOUNT(cookie_cats[userid])
+
+D1 Retention =
+DIVIDE(
+    CALCULATE([Players], cookie_cats[retention_1] = TRUE()),
+    [Players]
+)
+
+D7 Retention =
+DIVIDE(
+    CALCULATE([Players], cookie_cats[retention_7] = TRUE()),
+    [Players]
+)
+
+Median Game Rounds =
+MEDIAN(cookie_cats[sum_gamerounds])
+
+D1 Gate 30 =
+CALCULATE([D1 Retention], cookie_cats[version] = "gate_30")
+
+D1 Gate 40 =
+CALCULATE([D1 Retention], cookie_cats[version] = "gate_40")
+
+D7 Gate 30 =
+CALCULATE([D7 Retention], cookie_cats[version] = "gate_30")
+
+D7 Gate 40 =
+CALCULATE([D7 Retention], cookie_cats[version] = "gate_40")
+
+D7 Retention Gap =
+[D7 Gate 30] - [D7 Gate 40]
+
+Players Gate 30 =
+CALCULATE([Players], cookie_cats[version] = "gate_30")
+
+Players Gate 40 =
+CALCULATE([Players], cookie_cats[version] = "gate_40")
