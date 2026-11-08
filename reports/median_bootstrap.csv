@@ -1,0 +1,3 @@
+version,players,median_rounds,median_rounds_ci_low,median_rounds_ci_high
+gate_30,44699,17,16,17
+gate_40,45489,16,16,17

@@ -1,0 +1,12 @@
+{
+  "source_rows": 90189,
+  "clean_rows": 90188,
+  "removed_outlier_rows": 1,
+  "duplicate_userids": 0,
+  "missing_values": 0,
+  "invalid_versions": 0,
+  "invalid_retention_values": 0,
+  "negative_rounds": 0,
+  "max_rounds_after_filter": 2961,
+  "quality_status": "PASS"
+}
