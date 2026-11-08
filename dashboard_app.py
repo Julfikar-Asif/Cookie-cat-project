@@ -101,3 +101,4 @@ st.info(
     "is 19.02% for Gate 30 versus 18.20% for Gate 40. Confirm the decision with "
     "revenue and longer-term retention data before permanent rollout."
 )
+
