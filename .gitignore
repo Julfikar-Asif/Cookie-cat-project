@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Power BI / local report files
+*.pbi/
+*.pbix~
+*.pbit~
+*.tmp
+
+# Generated local files
+*.log
+*.bak
+*.swp
+*.swo
+
+# Operating system
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor settings
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+
+# Test and coverage output
+.coverage
+coverage.xml
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets and local credentials
+*.pem
+*.key
+credentials.json
+secrets.json
