@@ -79,21 +79,7 @@ cookie-cats-dashboard
 Do not add a second README, `.gitignore`, or license if those files already
 exist locally.
 
-### 2. Push this project to GitHub
 
-From the project directory:
-
-```powershell
-cd D:\cookie-cat
-git init
-git add .
-git commit -m "Add Cookie Cats Streamlit dashboard"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/cookie-cats-dashboard.git
-git push -u origin main
-```
-
-Replace `YOUR_USERNAME` with your GitHub username.
 
 ### 3. Deploy the app
 
@@ -189,3 +175,7 @@ This dataset contains retention through day 7 and game-round activity, but it
 does not include revenue, acquisition source, device, country, or longer-term
 retention. The findings are therefore useful for the experiment analysis but
 are not a complete product or revenue decision on their own.
+
+## Live dashboard
+
+[Open the Cookie Cats A/B Test dashboard](https://julfikar-asif-cookie-cat-project-dashboard-app-dbr0i3.streamlit.app/)
